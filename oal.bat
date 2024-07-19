@@ -1,12 +1,9 @@
 @echo off
 cls
-title Office App Launcher - Warning!
-echo This application is currently under development and all functions may not work.
-pause
 goto app.trisosies.launch
 :app.trisosies.launch
 set name=Office App Launcher
-set version=No version.
+set version=1.0
 cls
 title %name% - Welcome!
 echo This requires Office apps to be installed on your computer to work.
