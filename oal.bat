@@ -1,13 +1,16 @@
 @echo off
 cls
+title Office App Launcher - Warning!
+echo You're currently running the beta version of Office App Launcher, this may have bugs and it might not work properly, please report all bugs on the issue tracker.
+pause
 goto app.peposies.launch
 :app.peposies.launch
 set name=Office App Launcher
-set version=1.1
-set whatsnew=Changed the links to my new username.
+set version=2.0-beta1
+set whatsnew=You're now able to download and install Microsoft Office apps on your computer from this application.
 cls
 title %name% - Welcome!
-echo This requires Office apps to be installed on your computer to work.
+echo This requires Office apps to be installed on your computer to work. If you don't have Office apps installed on your computer, press 6 on your keyboard to install them or press 9 to launch the web version.
 echo You can download this for your own computer at https://github.com/Peposies/Office-App-Launcher.
 echo.
 echo Press 1 to launch Outlook.
@@ -15,6 +18,7 @@ echo Press 2 to launch Word.
 echo Press 3 to launch PowerPoint.
 echo Press 4 to launch Excel.
 echo Press 5 to launch OneNote.
+echo Press 6 to install Microsoft Office apps on your computer.
 echo Press 9 to switch to the web version.
 echo Press 0 to find out more about this project.	
 echo.
@@ -25,8 +29,21 @@ if %function.peposies.launch.option% == 2 start winword.exe
 if %function.peposies.launch.option% == 3 start powerpnt.exe
 if %function.peposies.launch.option% == 4 start excel.exe
 if %function.peposies.launch.option% == 5 start onenote.exe
+if %function.peposies.launch.option% == 6 goto app.peposies.install.office
 if %function.peposies.launch.option% == 9 goto app.peposies.launch.web
 if %function.peposies.launch.option% == 0 goto app.peposies.findoutmore
+goto app.peposies.launch
+:app.peposies.install.office
+cls
+title %name% - Install Office Apps
+echo This will download the latest version of Office apps for your computer and then Office App Launcher will run the setup application.
+echo.
+winget install --id Microsoft.Office
+pause
+echo Microsoft Office has now been sucessfully installed on your computer!
+pause
+cls
+echo Now returning to %name%'s HOME Menu.
 goto app.peposies.launch
 :app.peposies.launch.web
 cls
