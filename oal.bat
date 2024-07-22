@@ -6,8 +6,8 @@ pause
 goto app.peposies.launch
 :app.peposies.launch
 set name=Office App Launcher
-set version=2.0-beta1
-set whatsnew=You're now able to download and install Microsoft Office apps on your computer from this application.
+set version=2.0-beta2
+set whatsnew=Changed the name in some places from "Pcoosies" to "Pcoogle".
 cls
 title %name% - Welcome!
 echo This requires Office apps to be installed on your computer to work. If you don't have Office apps installed on your computer, press 6 on your keyboard to install them or press 9 to launch the web version.
