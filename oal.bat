@@ -11,7 +11,7 @@ set whatsnew=You're now able to download and install Microsoft Office apps on yo
 cls
 title %name% - Welcome!
 echo This requires Office apps to be installed on your computer to work. If you don't have Office apps installed on your computer, press 6 on your keyboard to install them or press 9 to launch the web version.
-echo You can download this for your own computer at https://github.com/Peposies/Office-App-Launcher.
+echo You can download this for your own computer at https://github.com/Pcoogle/Office-App-Launcher.
 echo.
 echo Press 1 to launch Outlook.
 echo Press 2 to launch Word.
