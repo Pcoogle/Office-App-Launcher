@@ -11,13 +11,13 @@ Outlook might not be working properly because of the differences between persona
 
 Replace this:
 ```
-if %function.peposies.launch.web.option% == 1 start https://outlook.office.com
+if %function.pcoogle.launch.web.option% == 1 start https://outlook.office.com
 ```
 With:
 ```
-if %function.peposies.launch.web.option% == 1 start https://outlook.live.com
+if %function.pcoogle.launch.web.option% == 1 start https://outlook.live.com
 ```
 # FAQ
 - **Will this work on older versions of Microsoft Office, e.g., Office 2003?** This should work on older versions of Office, but some features in this app may not work, for example, OneNote will **not** run on versions of Microsoft Office older than 2003.
-- **The application isn't working as expected, what can I do?** You can make an issue report by clicking [here](https://github.com/Trisosies/Office-App-Launcher/issues) or by going to https://github.com/Trisosies/Office-App-Launcher/issues.
+- **The application isn't working as expected, what can I do?** You can make an issue report by clicking [here](https://github.com/Pcoogle/Office-App-Launcher/issues) or by going to https://github.com/Pcoogle/Office-App-Launcher/issues.
 - **I don't want to use Microsoft Office, I want to use another office suite.** You can use other office suites, but you'll have to change the file path.
